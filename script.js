@@ -87,7 +87,7 @@ async function checkWeather(name) {
   humidity.textContent = `${data.main.humidity}%`;
   wind.textContent = `${data.wind.speed}km/h`;
   feellike.textContent = `Feels like : ${data.main["feels_like"]}`;
-  let newsrc = `Weather-app/images/${data.weather[0].main}.png`;
+  let newsrc = `images/${data.weather[0].main}.png`;
   icon.src = newsrc;
   descrip.textContent=data.weather[0].main;
     // console.log(data);
